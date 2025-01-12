@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerita</title>
+    <link rel="icon" href="img/5c265d4a-7075-4890-ba30-867fbacedf47.jpg" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top: 70px;
+            background-color: #efeff1;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #f55aa7, #eb198c);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 10px 15px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fff8e1;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.75rem;
+        }
+
+        .story {
+            background-color: #f7f7fd;
+            padding: 40px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(238, 73, 73, 0.1);
+            max-width: 800px;
+        }
+
+        h1 {
+            color: #fc32c9;
+            text-align: center;
+        }
+
+        h3 {
+            color: #eb198c;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+
+        p {
+            color: #666;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #f55dba;
+            color: #66fd0f;
+            text-align: center;
+            padding: 8px 0;
+            width: 100%;
+            position: relative; 
+        }
+
+        footer a {
+            color: #66fd0f;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #f55dba;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .back-to-top:hover {
+            background-color: #eb198c;
+        }
+
+        /* CSS untuk dropdown pink */
+        .dropdown-toggle {
+            background-color: #ff69b4; /* Warna latar belakang pink */
+            border-color: #ff69b4; /* Warna border */
+            color: white; /* Warna teks */
+        }
+
+        .dropdown-toggle:hover {
+            background-color: #ff1493; /* Warna latar belakang saat hover */
+            border-color: #ff1493; /* Warna border saat hover */
+        }
+
+        .dropdown-menu {
+            background-color: #ff69b4; /* Warna dropdown menu */
+        }
+
+        .dropdown-item {
+            color: white; /* Warna teks item dropdown */
+        }
+
+        .dropdown-item:hover {
+            background-color: #ff1493; /* Warna item saat hover */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-user-friends"></i> Tentang Kita Berdua</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Our Journey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cerita.html"><i class="fas fa-book"></i> Cerita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="foto.html"><i class="fas fa-camera"></i> Foto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content" id="top"> <!-- Tambahkan ID di sini -->
+        <div class="story-links text-center my-4">
+            <h3>Cerita</h3>
+            <div class="dropdown text-end"> <!-- Align dropdown to the right -->
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pilih Cerita
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#cerita-baru">Cerita Baru: Awal yang Menarik</a></li>
+                    <li><a class="dropdown-item" href="#sudut-pandangan-nidaa">Pertama Kenal Menurut Nidaa</a></li>
+                    <li><a class="dropdown-item" href="#sudut-pandangan-albar">Pertama Kenal Menurut Albarr</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="story" id="cerita-baru">
+            <h1>CERITA BARU: AWAL YANG MENARIK</h1>
+            <p>Ini adalah cerita baru yang sangat menarik! Di sini kita akan menjelajahi pengalaman baru yang membawa kita lebih dekat satu sama lain. Cerita ini dimulai dengan...</p>
+            <a href="#top" class="back-to-top">Kembali ke Atas</a>
+        </div>
+
+        <div class="story" id="sudut-pandangan-nidaa">
+            <h1>SUDUT PANDANG NIDAA</h1>
+            <p>Awal kita ketemu itu karna kita satu kelas dari kelas 7,<br> tapi kita belum saling kenal satu sama lain <br>bahkan sampe kelas 8 akhir karena waktu itu pandemi,<br> jadi belajar di rumah. Sampe <br> akhirnya kita saling kenal itu di kelas 9 awal,<br> di tanggal 18 Agustus 2022, pas peringatan hari kemerdekaan, <br> di situ wali kelas kita ngebagiin wafer gitu, buat anak2 <br> kelas. Singkat cerita, wafernya dititip ke aku, dan aku yang <br> bagiin wafernya waktu di kelas. Terus aku sempet foto bareng <br> Bu Dwi (wali kelas kita) dan aku post foto <br> itu di status whatsapp aku, dan kebetulan baru di hari itu <br> juga aku save no. Albar HAHAHA, terus akhirnya Albar repply <br>status whatsapp aku dan yaa, awal mula chattan karna kita bahas hal <br> ga jelas, yaitu wafer dari bu Dwi😭 jadi singkatnya Albar repply status aku gini,<br> 👱‍♂️"Emang tadi ada Bu Dwi," 👱‍♀️"Ada, ngasi wafer yang tadi,"<br>
+            Dann akhirnyaa lumayan panjangg dehh bahasannya,<br> karna kita debatin rasa wafer itu, Albar tim nebak rasa keju, Nida tim nebak rasa vanilla <br>
+            <br> DAN PASTINYA YANG BENER RASA VANILLA DONG..
+            </p>
+            <a href="#top" class="back-to-top">Kembali ke Atas</a>
+        </div>
+
+        <div class="story" id="sudut-pandangan-albar">
+            <h1>DARI SUDUT PANDANG ALBARR YAA</h1>
+            <p>jadi awalnya tuh di tanggal 18 agustus pas abis <br>lomba agustusan, ceritanya tuh anak2 tuh dikasih wafer sama nidaaa,<br>nah trss aku te repply sw, nanyain bu dwi <br>trs sekalian bilang makasii udhh dikaasih wafer, enak wafernya rasa keju<br> teruss kata nidaaa te itumaa dri bu dwi bukann drii akuu, <br>"EMNG WAFERNYA RASA KEJU YA?" dan disituu lah awal dri kita saling kenal garaa2 <br>mendebatkan rasa wafer antara rasa keju, dan vanilla. <br>
+            dan ternyata rasa wafernya rasa vanila, pdahal aku udahh ngotot kloo ituu kejuu.
+            <h4>TERIMAKASIH WAFER, GARA2 KMUU KITA JADII DEKET SAMPE SEKARANG..</h4>
+            </p>
+            <a href="#top" class="back-to-top">Kembali ke Atas</a>
+        </div>
+    </div>
+
+    <script>
+        // Efek slide ke cerita dengan offset
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                const target = document.querySelector(this.getAttribute('href'));
+                const offset = 70; // Sesuaikan dengan tinggi navbar Anda
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+    
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
