@@ -134,7 +134,7 @@ if (isset($_POST["kirim"])) {
         </div>
     </nav>
 
-    <div class="container">
+<!--     <div class="container">
         <h1>Tuliskan Pesan Rahasia</h1>
         <form action="kesan.php" method="POST">
             <label for="kepada">Kepada:</label>
@@ -143,7 +143,7 @@ if (isset($_POST["kirim"])) {
             <textarea id="pesan" name="pesan" rows="4" required></textarea>
             <button type="submit" name="kirim">Kirim</button>
         </form>
-    </div>
+    </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
